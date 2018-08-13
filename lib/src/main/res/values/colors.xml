@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="exd_white">#FFFFFF</color>
+    <color name="exd_black">#000000</color>
+
+    <color name="exd_line">#E4E4E4</color>
+    <color name="exd_dialog_blue">#2D8EE5</color>
+    <color name="exd_dialog_red">#F72E2E</color>
+    <color name="exd_dialog_text">#404040</color>
+    <color name="exd_sheet_cancel_text">#ff3b30</color>
+
+    <color name="exd_btn_selected">#33969696</color>
+    <color name="exd_btn_selected_dark">#40CBCBCB</color>
+
+    <color name="exd_material_grey_900">#ff212121</color>
+
+    <color name="blue_textView">#00A0EA</color>
+
+</resources>

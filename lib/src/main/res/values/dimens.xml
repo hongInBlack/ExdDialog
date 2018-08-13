@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="exd_dialog_max_width">356dp</dimen>
+    <dimen name="exd_dialog_sheet_cancel_height">120dp</dimen>
+    <dimen name="exd_dialog_vertical_margin">52dp</dimen>
+    <dimen name="exd_dialog_horizontal_margin">28dp</dimen>
+
+</resources>

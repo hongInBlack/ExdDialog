@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="exDialogStyle" format="reference"/>
+
+    <declare-styleable name="ExDialog">
+
+        <attr name="exdTheme" format="reference"/>
+        <attr name="exdBackground" format="reference"/>
+        <attr name="exdPositiveText" format="string|reference"/>
+        <attr name="exdNegativeText" format="string|reference"/>
+        <attr name="exdInputColor" format="color|reference"/>
+        <attr name="exdInputBg" format="reference"/>
+        <attr name="exdInputHintColor" format="color|reference"/>
+        <attr name="exdPositiveTextSelector" format="reference"/>
+        <attr name="exdNegativeTextSelector" format="reference"/>
+        <attr name="exdPositiveBgSelector" format="reference"/>
+        <attr name="exdNegativeBgSelector" format="reference"/>
+        <attr name="exdTitleColor" format="color|reference"/>
+        <attr name="exdContentColor" format="color|reference"/>
+        <attr name="exdListItemColor" format="color|reference"/>
+        <attr name="exdSheetItemColor" format="color|reference"/>
+        <attr name="exdDividerColor" format="color|reference"/>
+        <attr name="exdListSelector" format="reference"/>
+        <attr name="exdDivider" format="reference"/>
+        <attr name="exdSheetCancelText" format="string|reference"/>
+        <attr name="exdSheetCancelColor" format="color|reference"/>
+
+    </declare-styleable>
+
+</resources>

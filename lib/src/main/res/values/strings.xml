@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">core</string>
+    <string name="exd_tip">提示</string>
+    <string name="exd_cancel">取消</string>
+    <string name="exd_ok">确定</string>
+    <string name="exd_hint">请输入</string>
+</resources>

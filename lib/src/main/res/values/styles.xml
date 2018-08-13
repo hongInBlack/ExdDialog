@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ExdStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:windowMinWidthMajor">65%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:actionModeBackground">@color/exd_material_grey_900</item>
+        <item name="android:windowAnimationStyle">@style/exd_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="exd_WindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/exd_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/exd_popup_exit</item>
+    </style>
+
+
+    <style name="ExDialogStyle">
+
+    </style>
+
+</resources>
