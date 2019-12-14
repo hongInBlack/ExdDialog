@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="exDialogStyle">@style/ExDialogStyle</item>
+    </style>
+
+
+    <style name="ExDialogStyle">
+
+        <item name="exdTheme">@style/ExdStyle</item>
+        <item name="exdPositiveTextSelector">@color/color_blue_text</item>
+        <item name="exdNegativeTextSelector">@color/color_blue_text</item>
+        <item name="exdPositiveBgSelector">@drawable/exd_dialog_selector</item>
+        <item name="exdNegativeBgSelector">@drawable/exd_dialog_selector</item>
+
+        <!--  <item name="exdContentColor">@color/colorPrimaryDark</item>-->
+
+        <item name="exdListItemColor">@color/exd_black</item>
+        <item name="exdSheetItemColor">#287de8</item>
+
+        <item name="exdNegativeText">取消</item>
+        <item name="exdPositiveText">确定</item>
+        <item name="exdSheetCancelText">这是sheet取消</item>
+
+    </style>
+
+
+</resources>

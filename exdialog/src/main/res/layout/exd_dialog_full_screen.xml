@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:background="@drawable/exd_shape_radius_12"
+        android:clipToPadding="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/custom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/exd_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/exd_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/exd_dialog_selector_left"
+                android:gravity="center"
+                android:minHeight="44dp"
+                android:padding="3dp"
+                android:text="@string/exd_cancel"
+                android:textColor="@color/exd_dialog_blue"
+                android:textSize="17sp"/>
+
+            <View
+                android:id="@+id/exd_line_vertical"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/exd_line"/>
+
+            <TextView
+                android:id="@+id/exd_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/exd_dialog_selector_right"
+                android:gravity="center"
+                android:minHeight="44dp"
+                android:padding="3dp"
+                android:text="@string/exd_ok"
+                android:textColor="@color/exd_dialog_blue"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+</LinearLayout>
