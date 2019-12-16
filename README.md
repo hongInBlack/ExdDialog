@@ -3,6 +3,29 @@
 自定义的 Dialog
 只支持Androidx
 
+#### get this project
+
+**Step 1.** Add it in your root build.gradle at the end of repositories:
+
+```groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+**Step 2.** Add the dependency
+
+```groovy
+	dependencies {
+	        implementation 'com.github.hongInBlack:ExdDialog:1.0'
+	}
+```
+
+
+
 #### 一、设置主题
 
 ##### 1.在App当前主题下增加
@@ -28,7 +51,20 @@
 </style>
 ```
 
-#### 二、用法
+
+
+#### 二、截图
+
+| ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154044_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154049_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154056_ExDialog.jpg>) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154102_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154107_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154118_ExDialog.jpg>) |
+| ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154124_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154128_ExDialog.jpg>) | ![](<https://raw.githubusercontent.com/hongInBlack/ExdDialog/dev/images/Screenshot_20191216-154134_ExDialog.jpg>) |
+
+
+
+
+
+#### 三、用法
 
 ##### 1.标准提示
 
