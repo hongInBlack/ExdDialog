@@ -1,5 +1,7 @@
 ### ExDialog
 
+[![](https://jitpack.io/v/hongInBlack/ExdDialog.svg)](https://jitpack.io/#hongInBlack/ExdDialog)
+
 自定义的 Dialog
 只支持Androidx
 
