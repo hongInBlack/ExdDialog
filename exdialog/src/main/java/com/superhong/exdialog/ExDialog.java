@@ -1166,6 +1166,10 @@ public class ExDialog extends Dialog implements View.OnClickListener,
             return mListItemTextColor;
         }
 
+        public int getSheetItemTextColor() {
+            return mSheetItemTextColor;
+        }
+
         @UiThread
         public ExDialog build() {
             return new ExDialog(this);

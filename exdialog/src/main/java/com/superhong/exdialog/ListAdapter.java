@@ -75,8 +75,8 @@ public class ListAdapter extends BaseAdapter {
             if (mBuilder.getTypeEnum() == TypeEnum.LIST && mBuilder.getListItemTextColor() != -1) {
                 item.setTextColor(mBuilder.getListItemTextColor());
             }
-            if (mBuilder.getTypeEnum() == TypeEnum.SHEET && mBuilder.getListItemTextColor() != -1) {
-                item.setTextColor(mBuilder.getListItemTextColor());
+            if (mBuilder.getTypeEnum() == TypeEnum.SHEET && mBuilder.getSheetItemTextColor() != -1) {
+                item.setTextColor(mBuilder.getSheetItemTextColor());
             }
         }
 
