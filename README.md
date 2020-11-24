@@ -22,7 +22,7 @@
 
 ```groovy
 	dependencies {
-	        implementation 'com.github.hongInBlack:ExdDialog:1.0.1'
+	        implementation 'com.github.hongInBlack:ExdDialog:1.0.2'
 	}
 ```
 
