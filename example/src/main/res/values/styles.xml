@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="exDialogStyle">@style/ExDialogStyle</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
 
 

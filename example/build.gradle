@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
     defaultConfig {
         applicationId 'com.superhong.exdExample'
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 19121401
         versionName "v1.0"
         vectorDrawables.useSupportLibrary = true
@@ -16,7 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '29.0.2'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -25,7 +25,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.github.hongInBlack:ExdDialog:1.0.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.github.hongInBlack:ExdDialog:1.0.2'
 
 }
