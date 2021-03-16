@@ -26,6 +26,6 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.github.hongInBlack:ExdDialog:1.0.2'
-
+    implementation 'com.github.hongInBlack:ExdDialog:1.1'
+//    implementation project(path: ':exdialog')
 }

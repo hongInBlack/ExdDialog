@@ -2,14 +2,14 @@ package com.superhong;
 
 import android.graphics.Color;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.superhong.exdialog.ExDialog;
+import com.superhong.exdialog.ExLoadingDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,6 +77,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBt8.setOnClickListener(this);
         mBt9 = findViewById(R.id.bt_9);
         mBt9.setOnClickListener(this);
+        findViewById(R.id.bt_10).setOnClickListener(v -> {
+            ExLoadingDialog exLoadingDialog = new ExLoadingDialog(MainActivity.this);
+            exLoadingDialog.setTip("加载中...");
+            exLoadingDialog.show();
+        });
     }
 
     @Override
@@ -85,13 +90,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
             case R.id.bt_1:
-
                 // 标准提示
                 new ExDialog.Builder(this)
                         .autoDismiss(true)
                         .title("温馨提示")
                         .content("明日天气：东风有雨,明日天气：东风有雨,明日天气：东风有雨,明日天气：东风有雨,明日天气：东风有雨。")
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
 
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 new ExDialog.Builder(this)
                         .autoDismiss(true)
                         .title("温馨提示")
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
                 break;
@@ -110,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .title("温馨提示")
                         .content("明日天气：东风有雨")
                         .singleAction()
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
                 break;
@@ -124,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .contentColorRes(R.color.exd_sheet_cancel_text)
                         .negativeColor(getResources().getColor(R.color.colorPrimary))
                         .positiveColor(getResources().getColor(R.color.exd_black))
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
                 break;
@@ -136,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .content("设备已经更新")
                         .iconRes(R.drawable.icon_success)
                         .singleAction()
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
                 break;
@@ -147,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .title("请输入密码")
                         .content("长度大于等于10位")
                         .inputTypeTextPassWord()
-                        .input("请输入密码",(dialog,input) -> {
+                        .input("请输入密码", (dialog, input) -> {
                             if (input.toString().trim().length() >= 10 || input.toString().trim().length() == 0) {
                                 dialog.positiveView().setEnabled(true);
                             } else {
@@ -155,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             }
 
                         })
-                        .onAction((dialog,isOk) -> {
+                        .onAction((dialog, isOk) -> {
                             if (isOk) {
                                 showToast(dialog.positiveView().getText() + "!");
                             } else {
@@ -171,9 +175,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .autoDismiss(true)
                         .negativeBg(null)
                         .positiveBg(null)
-                        .customView(R.layout.coustom,true)
+                        .customView(R.layout.coustom, true)
                         .fullScreen()
-                        .onAction((dialog,isOk) -> showToast(isOk + "!"))
+                        .onAction((dialog, isOk) -> showToast(isOk + "!"))
                         .build()
                         .show();
                 break;
@@ -199,8 +203,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < list.size(); i++) {
             colors.add(Color.BLACK);
         }
-        colors.set(0,Color.parseColor("#DB4437"));
-        colors.set(2,Color.parseColor("#86B950"));
+        colors.set(0, Color.parseColor("#DB4437"));
+        colors.set(2, Color.parseColor("#86B950"));
 
         new ExDialog.Builder(this)
                 .list(list)
@@ -209,7 +213,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .itemColors(colors)
                 //                .selectPosition(0)
                 .listItemTextColorRes(R.color.exd_dialog_blue)
-                .onItemClick((dialog,position) -> showToast(list.get(position)))
+                .onItemClick((dialog, position) -> showToast(list.get(position)))
                 .build()
                 .show();
     }
@@ -226,13 +230,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < list.size(); i++) {
             colors.add(Color.BLACK);
         }
-        colors.set(0,Color.parseColor("#DB4437"));
-        colors.set(2,Color.parseColor("#86B950"));
+        colors.set(0, Color.parseColor("#DB4437"));
+        colors.set(2, Color.parseColor("#86B950"));
 
         new ExDialog.Builder(this)
                 .sheet(list)
                 .itemColors(colors)
-                .onItemClick((dialog,position) -> showToast(list.get(position)))
+                .onItemClick((dialog, position) -> showToast(list.get(position)))
                 .build()
                 .show();
     }
@@ -242,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             toast.cancel();
             toast = null;
         }
-        toast = Toast.makeText(this,message,Toast.LENGTH_SHORT);
+        toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         toast.show();
     }
 }
