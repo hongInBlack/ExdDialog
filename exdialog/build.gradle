@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-version = '1.0'
 
-int $version_Code = 19121501
-String $version_Name = "1.0"
+int $version_Code = 21031601
+String $version_Name = "1.1"
 
 android {
     compileSdkVersion 30
